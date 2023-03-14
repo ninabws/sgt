@@ -3,5 +3,8 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("<str:nome>", views.greeting, name="greeting"),
+    # path("greet", views.greet, name="greet"),
+    # path("<str:nome>", views.greeting, name="greeting"),
+    # path("<str:pessoa>", views.greet, name="greet"),
+    path("<str:sobrinha>", views.tiadozap, name="tiadozap"),
 ]
